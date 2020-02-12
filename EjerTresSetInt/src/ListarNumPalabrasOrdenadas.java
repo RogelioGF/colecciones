@@ -23,12 +23,12 @@ public class ListarNumPalabrasOrdenadas {
 
 		do {
 			palabra = teclado.nextLine();
-			if (palabra == "*") {
+			if (palabra.equals("*")) {
 				obTreeSet.remove(palabra);
 			}else {
 				obTreeSet.add(palabra);
 			}
-		}while(palabra != "*");
+		}while(!palabra.equals("*"));
 
 
 		//ordenados todos los valores de menor a mayor
