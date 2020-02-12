@@ -52,6 +52,11 @@ public class EjerTresSetString {
 			nom=itr03.next();
 			System.out.print(nom + " ");
 		}//while obTreeSet
+		
+		Leer.mostrarEnPantalla("\n");
+		System.out.println("Valores de objHashSet: " + obHashSet.toString());
+		System.out.println("Valores de objLinkHashSet: " + obLinkedHashSet.toString());
+		System.out.println("Valores de objTreeSet: " + obTreeSet.toString());
 
 	}
 
