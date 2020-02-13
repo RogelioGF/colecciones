@@ -14,11 +14,11 @@ dado el usuario.*/
 public class ListarNumPalabrasOrdenadas {
 
 	public static void main(String[] args) {
-	
+		int num = 0;
 		String palabra;
 		Scanner teclado = new Scanner(System.in);
 		Set <String> obTreeSet = new TreeSet<>(); 
-
+		Set <Integer> ob2TreeSet = null; 
 		System.out.println("Introduce palabras por teclado, * para finalizar: ");
 
 		do {
@@ -30,6 +30,16 @@ public class ListarNumPalabrasOrdenadas {
 			}
 		}while(!palabra.equals("*"));
 
+		System.out.println("Dime un número entero positivo");
+
+		do {
+			num = teclado.nextInt();
+			ob2TreeSet = new TreeSet<>(); 
+
+		}while(num < 0 || num >= obTreeSet.size());
+
+		System.out.println("Numero de objetos almacenados en la coleccion: " + obTreeSet.size());
+		System.out.println("Numero de objetos almacenados en la coleccion: " + ob2TreeSet.size());
 
 		//ordenados todos los valores de menor a mayor
 		Iterator<String>  itr = obTreeSet.iterator();
